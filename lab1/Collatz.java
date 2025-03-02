@@ -3,14 +3,13 @@
  */
 public class Collatz {
 
-    /** Buggy implementation of nextNumber! */
+    /** Buggy implementation of nextNumber!
+    If n is odd,it means n%2==1 ,so return 3*n+1,else return n/2 */
     public static int nextNumber(int n) {
-        if (n  == 128) {
-            return 1;
-        } else if (n == 5) {
+        if (n % 2== 1) {
             return 3 * n + 1;
         } else {
-            return n * 2;
+            return n / 2;
         }
     }
 
